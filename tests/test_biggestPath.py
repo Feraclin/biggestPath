@@ -1,6 +1,6 @@
 import pytest as pytest
 
-from main import BiggestPath, LengthPathOutOfRange, DuplicateName
+from function.biggestPath import LengthPathOutOfRange, DuplicateName, BiggestPath
 
 biggestPath = BiggestPath()
 
