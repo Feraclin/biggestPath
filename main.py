@@ -8,12 +8,21 @@ if __name__ == '__main__':
             'dir4': ['file2'],
             'dir5': {
                 'dir6': {
-                    'dir7': ['file2']
-                }}},
+                    'dir7': ['file2'],
+                    'dir8': {
+                        'dir9': {
+                            'dir10': {}
+                        }
+                    }
+                }
+            }
+        },
         'dir8': {
             'dir9': ['file3'],
             'dir10': {
-                'dir11': {}}},
+                'dir11': {}
+            }
+        },
     }
     dir_dct2 = {
         'dir1': {},
@@ -23,11 +32,15 @@ if __name__ == '__main__':
             'dir5': {
                 'dir6': {
                     'dir7': {}
-                }}},
+                }
+            }
+        },
         'dir8': {
             'dir9': ['file3'],
             'dir10': {
-                'dir11': {}}},
+                'dir11': {}
+            }
+        },
     }
     biggestPath = BiggestPath()
     print('d1', biggestPath(dir_dct1))
