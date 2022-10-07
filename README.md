@@ -40,4 +40,4 @@ d1 = {'dir1': {}, 'dir2': ['file1'], 'dir3': {'dir4': ['file2'], 'dir5': {'dir6'
 d2 = {'dir1': ['file1', 'file1']}
 
 [OUT]
-/
+/dir1/file1
