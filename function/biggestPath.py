@@ -46,4 +46,6 @@ class BiggestPath:
                 case list() if cls.name_check(k):
                     if cls.check_duplicate_name(v):
                         raise DuplicateName
+                    else:
+                        out += f'{k}{"/"}{max(v)}'
         return out

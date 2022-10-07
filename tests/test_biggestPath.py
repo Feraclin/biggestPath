@@ -32,13 +32,13 @@ def test_path_with_whitespaces():
                            }
                        }
                }
-    assert biggestPath(dir_dct) == '/dir3/dir4'
+    assert biggestPath(dir_dct) == '/dir1/dir2/file1'
 
 
 def test_path_not_depth():
     dir_dct = {'dir1': ['file1', 'file2'],
                }
-    assert biggestPath(dir_dct) == '/'
+    assert biggestPath(dir_dct) == '/dir1/file2'
 
 
 def test_tree_path():
@@ -62,7 +62,7 @@ def test_tree_path():
                     },
             'dir12':  ['file3'],
                 }
-    assert biggestPath(dir_dct) == '/dir8/dir9/dir10/dir11'
+    assert biggestPath(dir_dct) == '/dir8/dir9/dir10/dir11/dir12/file3'
 
 
 def test_very_length_path_error():
